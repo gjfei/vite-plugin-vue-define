@@ -1,0 +1,29 @@
+{
+  "name": "vite-plugin-vue-define",
+  "version": "1.0.0",
+  "description": "vite define constant inject vue template",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.mjs.js",
+  "types": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./index.ts"
+    },
+    "./*": "./*"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "devDependencies": {
+    "vite": "^2.9.12",
+    "vite-plugin-dts": "^1.2.0"
+  },
+  "dependencies": {}
+}
