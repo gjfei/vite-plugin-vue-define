@@ -6,8 +6,14 @@
   "module": "dist/index.mjs.js",
   "types": "index.ts",
   "license": "MIT",
+  "private": false,
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "release": "vite build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjfei/vite-plugin-vue-define.git"
   },
   "exports": {
     ".": {
@@ -22,8 +28,7 @@
     "*.d.ts"
   ],
   "devDependencies": {
-    "vite": "^2.9.12",
-    "vite-plugin-dts": "^1.2.0"
+    "vite": "^2.9.12"
   },
   "dependencies": {}
 }
